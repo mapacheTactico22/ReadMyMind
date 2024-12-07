@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body {
+    background: #180161;
+    font-family: "Jaro", sans-serif;
+}
+
+section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4F1787;
+    color: #FB773C;
+    border: 3px solid #EB3678;
+    border-radius: 4px;
+    padding: 6px;
+    animation-duration: 2s;
+    animation-name: aparicion;
+}
+
+#inicio p {
+    font-size: 18px;
+}
+
+input {
+    margin-left: 5px;
+}
+
+button {
+    margin: 5px 8px 0px;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#messages {
+    font-size: 20px;
+    text-align: center;
+}
+
+#barraDeCarga {
+    height: 20px;
+    animation-duration: 2.8s;
+    animation-iteration-count: 4;
+    animation-name: cargar;
+    animation-play-state: paused;
+    background-color: #42e470;
+}
+
+#final {
+    top: 48%;
+    left: 48%;
+    background: #ffffff;
+    color: #000000;
+    border-color: #2f2f2f;
+    font-size: 18px;
+    animation-duration: 1s;
+    animation-name: aparicion;
+    animation-play-state: paused;
+}
+
+@keyframes aparicion {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cargar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        width: 70%;
+    }
+}

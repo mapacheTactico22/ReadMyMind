@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div id="inicio">
+            <h1>Adivinaré en que estas pensando</h1>
+            <p>
+                Escribe un numero del 1 al 10
+                <input type="number" id="inputNumero"><button id="sendNumber">Enviar</button>
+            </p>
+        </div>
+        <div id="mensajes">
+           <p id="messages">Analizando pensamiento...</p>
+           <p id="barraDeCarga"></p> 
+        </div>
+    </section>
+    <section id="final">
+        <p id="numeroPensado"><!-- Aquí Aparecera el mensajeFinal --></p>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
